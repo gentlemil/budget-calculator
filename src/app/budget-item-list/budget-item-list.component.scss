@@ -25,5 +25,20 @@
                 text-transform: uppercase ;
             }
         }
+
+        .income-column{
+            margin-right: 35px;
+
+            h1{
+                color: $green;
+            }
+        }
+
+        .expenses-column{
+
+            h1{
+                color: $red;
+            }
+        }
     }
 }
