@@ -4,19 +4,19 @@
             <div class="field is-narrow">
                 <div class="control">
                     <p>
-                        <input type='number' style="width: 100px;" class="input" placeholder="amount">
+                        <input type='number' required name="amount" style="width: 100px;" class="input" placeholder="amount" [ngModel]="item.amount">
                     </p>
                 </div>
             </div>
             <div class="field is-narrow">
                 <div class="control">
                     <p>
-                        <input type='text' style="width: 300px;" class="input" placeholder="description">
+                        <input type='text' required name="description" style="width: 300px;" class="input" placeholder="description" [ngModel]="item.description">
                     </p>
                 </div>
             </div>
             <div class="field">
-                <button type="submit" class="button is-primary">add</button>
+                <button type="submit" class="button is-primary" [disabled]="!itemForm.valid">add</button>
 
             </div>
         </div>
